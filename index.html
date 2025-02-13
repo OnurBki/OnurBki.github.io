@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NisAŞKım'a</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-pVIe+38mP0ZLmVqht7odbbtIuaDf6MXsJxHjohG1Io8WuasE+FVAWZucoGObqbjC8S4AaDLr1zjcGZjhhPbXBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="background-music" src="audio/background-music.mp3" autoplay loop></audio>
+
+    <!-- Music Controls -->
+    <div class="music-controls">
+        <button id="play-btn">Oynat</button>
+        <button id="pause-btn">Durdur</button>
+        <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+    </div>
+
+    <div class="background">
+        <div class="carousel-container">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/1.jpeg" alt="Photo 1"></div>
+                    <div class="swiper-slide"><img src="images/2.jpeg" alt="Photo 2"></div>
+                    <div class="swiper-slide"><img src="images/3.jpeg" alt="Photo 3"></div>
+                    <div class="swiper-slide"><img src="images/4.jpeg" alt="Photo 4"></div>
+                    <div class="swiper-slide"><img src="images/5.jpeg" alt="Photo 5"></div>
+                    <div class="swiper-slide"><img src="images/6.jpeg" alt="Photo 6"></div>
+                    <div class="swiper-slide"><img src="images/7.jpeg" alt="Photo 7"></div>
+                    <div class="swiper-slide"><img src="images/8.jpeg" alt="Photo 8"></div>
+                    <div class="swiper-slide"><img src="images/9.png" alt="Photo 9"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-prev" style="color: white;">3 Ay Önce</div>
+                <div class="swiper-button-next" style="color: white;">3 Ay Sonra</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html> 
